@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "12345.sso.v1;ssov1";
+option go_package = "terehkov.sso.v1;ssov1";
 
 service Auth {
 	rpc Register (RegisterRequest) returns (RegisterResponse);
@@ -34,5 +34,5 @@ message IsAdminRequest {
 }
 
 message IsAdminResponse {
-	bool is_admin = 1; // Indicates whether the user is an admin. 
+	bool is_admin = 1; // Indicates whether the user is an admin.
 }
